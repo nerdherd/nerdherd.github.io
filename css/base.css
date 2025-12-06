@@ -1,6 +1,8 @@
 /* Styles that apply to all pages */
 :root{
     --nerd-herd-navy: #081535ff;
+    --nerd-herd-blue: #0f4c85ff;
+    --nerd-herd-light-blue: #e6fafaff;
 }
 
 /* Poppins is licensed under the SIL Open Font License */
@@ -129,4 +131,9 @@
     src: url("fonts/Poppins-ThinItalic.ttf");
     font-weight: 100;
     font-style: italic;
+}
+
+body{
+    background-color: var(--nerd-herd-light-blue);
+    color: black;
 }
