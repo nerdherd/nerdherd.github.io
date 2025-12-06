@@ -9,6 +9,11 @@ onscroll = (event) => {
     } 
     else if (scroll_top > last_scroll_top) {
         header.classList.add("hide");
+        document.getElementById("header-nav").classList.remove("show")
     } 
     last_scroll_top = scroll_top <= 0 ? 0 : scroll_top;
+}
+
+function toggle_dropdown(){
+    document.getElementById("header-nav").classList.toggle("show");
 }

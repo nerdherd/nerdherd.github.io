@@ -51,13 +51,13 @@ header .header-logo *{
     padding: 0.5vw;
 }
 
-@media (width < 1100px) {
+@media screen and (width < 1100px) {
     header .header-logo .text{
         display: none;
     }
 }
 
-@media (width < 800px) {
+@media screen and (width < 800px) {
     header .header-logo h1{
         display: none;
     }
@@ -68,7 +68,7 @@ header .header-logo h1{
 }
 
 header .header-logo img{
-    height: 10vw;
+    height: 130px;
 }
 
 header .spacer{
@@ -81,29 +81,57 @@ header > h1 {
     font-size: 50px;
 }
 
-header .header-nav {
-    width: 60%;
-    display: flex;
-    justify-content: right;
-    column-gap: 50px;
+@media screen and (width < 720px) {
+    header .header-nav:not(.show){
+        display: none;
+    }
+
+    header .header-nav {
+        width: 150px;
+        position:absolute;
+        margin-right:20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .header-dropdown-button {
+        width: 150px;
+        margin-right: 20px;
+    }
 }
 
-header .header-nav a {
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    padding: 1pt;
-}
+@media screen and (width >= 720px){
+    header .header-nav {
+        display: flex;
+        justify-content: right;
+        column-gap: 50px;
+        margin-right: 20px;
+    }
 
-header .header-nav a:hover {
-    transform: scale(1.1);
-    transform-origin: center;
-}
+    header .header-nav a {
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 1pt;
+    }
 
-.header-spacer {
-    height: 150px;
-}
+    header .header-nav a:hover {
+        transform: scale(1.1);
+        transform-origin: center;
+    }
 
-.logo{
-    height: 2pt;
+    .header-spacer {
+        height: 150px;
+    }
+
+    .logo{
+        height: 2pt;
+    }
+
+    .header-dropdown-button {
+        display: none;
+    }
 }
