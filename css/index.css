@@ -17,6 +17,10 @@ footer {
     column-gap: 40px;
 }
 
+footer a {
+    color: lightblue;
+}
+
 .footer-spacer {
     height: 70px;
 }
