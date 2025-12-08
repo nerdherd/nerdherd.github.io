@@ -6,6 +6,7 @@ body{
     align-items: center;
     margin: 0px;
     padding: 0px;
+    flex-direction: row;
 }
 
 .timeline{
@@ -16,28 +17,87 @@ body{
     position: fixed;
 }
 
-@media (width<500px) {
+@media (width<950px) {
     .timeline{
         width: 50px;
+    }
+
+    .timeline > :not(.compact){
+        display: none;
+    }
+
+    .timeline .compact{
+        display: block !important; 
     }
 }
 
 .timeline button{
     display: flex;
     flex-grow: 1;
+    z-index: 2;
+}
+
+.scenes{
+    left: 10%;
 }
 
 .scene{
-    width: 98.8vw;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex: row;
 }
 
-#red{
-    background-color: red;
+.scene .spacer{
+    width:10vw;
 }
+
+.scene img{
+    z-index: -1;
+}
+
 #green{
     background-color: green;
 }
+
 #blue{
     background-color: blue;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.content{
+    background-color: var(--nerd-herd-navy);
+    height: 45vh;
+    width: 80vw;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+@media (width < 830px) {
+    .content {
+        top: 10%;
+        height: 80vh;
+    }
+}
+
+@media (width<476px){
+    .content{
+        height: 420px;
+        font-size: 3vw;
+    }
+}
+
+.content p{
+    padding: 2em;
+    color: white;
 }
