@@ -1,7 +1,3 @@
-* {
-    font-family: "Poppins", system-ui, sans-serif;
-}
-
 footer {
     position: fixed;
     bottom:0;
@@ -15,6 +11,15 @@ footer {
     align-items: center;
     height: 70px;
     column-gap: 40px;
+    z-index: 10000;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    column-gap: 40px;
 }
 
 footer a {
@@ -23,6 +28,26 @@ footer a {
 
 .footer-spacer {
     height: 70px;
+}
+
+footer h1 {
+    min-width: 180px;
+}
+
+.footer-contact-page {
+    display: none;
+}
+
+@media screen and (width < 1030px){
+    .footer-links {
+        display: none;
+    }
+    .footer-contact-page {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-right: 30px;
+    }
 }
 
 header{
@@ -127,10 +152,6 @@ header > h1 {
         transform-origin: center;
     }
 
-    .header-spacer {
-        height: 150px;
-    }
-
     .logo{
         height: 2pt;
     }
@@ -138,4 +159,8 @@ header > h1 {
     .header-dropdown-button {
         display: none;
     }
+}
+
+.header-spacer {
+    height: 150px;
 }
