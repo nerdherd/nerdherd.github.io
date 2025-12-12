@@ -105,6 +105,7 @@ header .header-logo h1{
 
 header .header-logo img{
     height: 130px;
+    z-index: 200;
 }
 
 header .spacer{
@@ -170,11 +171,6 @@ header.hide .header-nav-out {
         padding: 1pt;
     }
 
-    header .header-nav a:hover {
-        transform: scale(1.1);
-        transform-origin: center;
-    }
-
     .logo{
         height: 2pt;
     }
@@ -201,5 +197,34 @@ header .hide-logo {
 header.hide .hide-logo {
     /* display: block; */
     top: 105px;
+    opacity: 1;
+}
+
+.header-thing:hover {
+    
+}
+
+.header-sub {
+    opacity: 0;
+    transition: opacity 200ms;
+    position: absolute;
+    background-color: var(--nerd-herd-navy);
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: space-around;
+    /* display: none; */
+    display: flex;
+}
+
+.header-thing:not(:hover) .header-sub{
+    pointer-events: none;
+}
+
+header .header-nav .header-sub a {
+    font-size: 20px;
+}
+
+.header-thing:hover  .header-sub{
     opacity: 1;
 }
