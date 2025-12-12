@@ -136,6 +136,7 @@ header .header-title > * {
         justify-content: center;
         align-items: center;
         background-color: white;
+        transform: translateY(100%);
     }
 
     .header-dropdown-button {
