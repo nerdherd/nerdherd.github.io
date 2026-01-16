@@ -86,6 +86,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    width: min(600px,calc(100% - 40px));
+    overflow-x: scroll;
 }
 
 footer img {
