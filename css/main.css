@@ -101,7 +101,7 @@ footer > div:not(:last-child) {
 }
 
 footer > div > p {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -114,4 +114,8 @@ footer > div > div {
 footer > div > div > div {
     display: flex;
     flex-direction: column;
+}
+
+footer > div > div > div a {
+    font-size: 10px;
 }
