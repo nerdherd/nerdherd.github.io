@@ -35,6 +35,35 @@ header {
     width: 200px;
 }
 
+/* body */
+
+.body {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.body p {
+    margin: 0;
+}
+
+#impact-video-div {
+    width: 100%;
+    aspect-ratio: 640/480;
+    background-color: lightgray;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#impact-video {
+    width: max(90%,300px);
+    aspect-ratio: 640/480;
+    height: auto;
+}
+
+/* subtabs */
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -49,17 +78,6 @@ header {
     font-size: 20px;
 }
 
-.body {
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.body p {
-    margin: 0;
-}
-
-/* subtabs */
 
 .subtabs {
     position: relative;
