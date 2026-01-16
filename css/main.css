@@ -103,10 +103,16 @@ header {
     z-index: 1;
     padding-left: 5px;
     padding-right: 5px;
+    flex-direction: column;
+    width: 120px;
 }
 
 .subtabs:hover .subtabs-content {
-    display: block;
+    display: flex;
+}
+
+.subtabs .subtabs-content a {
+    font-size: 10px;
 }
 
 /* footer */
