@@ -28,11 +28,23 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .logo img {
-    width: 200px;
+    width: min(200px,40%);
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo h1{
+    color: white;
+    text-align: right;
+    font-size: min(40px,5vw);
 }
 
 /* body */
