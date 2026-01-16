@@ -1,0 +1,117 @@
+html, body {
+    background-color: var(--nerd-herd-navy);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    width: min(600px,calc(100% - 40px));
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    background-color: var(--nerd-herd-blue);
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    border-radius: 40% 40% 0 0;
+}
+
+.nav a {
+    font-size: 20px;
+}
+
+.body {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.body p {
+    margin: 0;
+}
+
+/* subtabs */
+
+.subtabs {
+    position: relative;
+}
+
+.subtabs .subtabs-content {
+    display:none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(204, 204, 204);
+    z-index: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.subtabs:hover .subtabs-content {
+    display: block;
+}
+
+/* footer */
+footer {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a, footer p {
+    margin: 0;
+}
+
+footer > div:not(:last-child) {
+    margin-right: 40px;
+}
+
+footer > div > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer > div > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+footer > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
