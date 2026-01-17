@@ -8,7 +8,7 @@ html, body {
 }
 
 .main-content {
-    width: min(600px,calc(100% - 40px));
+    width: min(700px,calc(100% - 40px));
     min-height: 100%;
 }
 
@@ -68,10 +68,23 @@ header {
     justify-content: center;
 }
 
+#impact-video-div a {
+    display:none;
+}
+
 #impact-video {
     width: max(90%,300px);
     aspect-ratio: 640/480;
     height: auto;
+}
+
+@media screen and (width<=350px){
+    #impact-video {
+        display: none;
+    }
+    #impact-video-div a {
+        display:block;
+    }
 }
 
 /* subtabs */
@@ -122,8 +135,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    width: min(600px,calc(100% - 40px));
-    overflow-x: scroll;
+    width: min(700px,calc(100% - 40px));
+    overflow-x: auto;
 }
 
 footer img {
