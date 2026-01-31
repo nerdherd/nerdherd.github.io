@@ -1,0 +1,49 @@
+/* footer */
+footer {
+    background-color: var(--nerd-herd-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    width: min(var(--min-width),calc(100% - 40px));
+    overflow-x: auto;
+}
+
+footer img {
+    height: 100px;
+}
+
+footer a, footer p {
+    margin: 0;
+    color: white
+}
+
+footer > div:not(:last-child) {
+    margin-right: 40px;
+}
+
+footer > div > p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer > div > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+footer > div > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div > div > div a {
+    font-size: 10px;
+}
+
+@media screen and (width < 760px){
+    footer{
+        flex-direction: column;
+    }
+}
