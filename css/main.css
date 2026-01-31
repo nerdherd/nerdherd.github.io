@@ -51,10 +51,14 @@ header {
 
 .body {
     background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .body p {
     margin: 0;
+    font-size: x-large;
+    text-align: justify;
 }
 
 .img-wrapper{
@@ -66,6 +70,36 @@ header {
 
 .img-wrapper img{
     border-radius: 10px;
+    width: 100%;
+}
+
+@media screen and (width > 1234px){
+    .img-wrapper{
+        width: 50%;
+    }
+    
+    /* .img-wrapper img{ */
+        /* width: 70% */
+    
+    .parag1, .parag2{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .parag1{
+        flex-direction: row;
+    }
+
+    .parag2{
+        flex-direction: row-reverse;
+    }
+
+    .parag1 p, .parag2 p{
+        width: 30%;
+        margin: 5px;
+    }
 }
 
 #impact-video-div {
