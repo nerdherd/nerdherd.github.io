@@ -8,7 +8,7 @@ html, body {
 }
 
 .main-content {
-    width: min(700px,calc(100% - 40px));
+    width: min(var(--min-width),calc(100% - 40px));
     min-height: 100%;
 }
 
@@ -165,7 +165,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    width: min(700px,calc(100% - 40px));
+    width: min(var(--min-width),calc(100% - 40px));
     overflow-x: auto;
 }
 
