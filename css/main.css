@@ -134,12 +134,11 @@ header {
     display:none;
     position: absolute;
     left: 0;
-    background-color: rgb(204, 204, 204);
+    background-color: white;
     z-index: 1;
-    padding-left: 5px;
-    padding-right: 5px;
     flex-direction: column;
-    width: 120px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .subtabs:hover .subtabs-content {
@@ -148,11 +147,20 @@ header {
 
 .subtabs .subtabs-content a {
     font-size: 10px;
+    color: var(--nerd-herd-navy);
+    text-decoration: none;
 }
 
 .smallnav {
     display: none;
 }
+
+hr{
+    color: black;
+    width: 100%;
+    margin: 0;
+}
+
 
 @media screen and (width < 760px){
     .nav {
