@@ -126,6 +126,10 @@ header {
         position: absolute;
     }
 
+    .section-spacer {
+        height: 10vh;
+    }
+
 }
 
 #impact-video-div {
@@ -203,10 +207,6 @@ hr{
     color: black;
     width: 100%;
     margin: 0;
-}
-
-.section-spacer {
-    height: 10vh;
 }
 
 
