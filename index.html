@@ -6,7 +6,7 @@
     <title>The Nerd Herd</title>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!-- <script src="js/headerfooter.js" defer></script> -->
+    <script src="js/header.js" defer></script>
     <link rel="icon" href="/images/nerd.svg">
     <meta property="og:title" content="NerdHerd"/>
     <meta property="og:type" content="website"/>
@@ -16,9 +16,9 @@
 <body>
     <div class="main-content">
         <header>
-            <div class="nav">
+            <div class="nav" id="nav">
                 <div class="subtabs">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                     <!-- <div class="subtabs-content">
                         <a href="#">Test</a>
                         <a href="#">Test</a>
@@ -26,7 +26,7 @@
                     </div> -->
                 </div>
                 <div class="subtabs">
-                    <a href="#">Programs</a>
+                    <a href="javascript:">Programs</a>
                     <div class="subtabs-content">
                         <a href="#">Joining FRC 687</a>
                         <a href="#">FTC League G</a>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="subtabs">
-                    <a href="#">Team Resources</a>
+                    <a href="javascript:">Team Resources</a>
                     <div class="subtabs-content">
                         <a href="#">ASM</a>
                         <a href="#">BUS</a>
@@ -44,13 +44,17 @@
                     </div>
                 </div>
                 <div class="subtabs">
-                    <a href="#">Seasons</a>
+                    <a href="javascript:">Seasons</a>
                     <div class="subtabs-content">
                         <a href="#">2026 Rebuilt</a>
                         <a href="#">2025 Reefscape</a>
                         <a href="#">2024 Crescendo</a>
                     </div>
                 </div>
+            </div>
+            <!-- <div id="spacer"></div> -->
+            <div class="smallnav">
+                <button onclick="toggleNav()">☰</button>
             </div>
             <div class="logo">
                 <img src="images/nerd.svg">

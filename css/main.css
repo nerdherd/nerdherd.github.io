@@ -96,7 +96,6 @@ header {
     width: 100%;
     background-color: white;
     height: 30px;
-    /* border-radius: 5% 5% 0 0; */
 }
 
 .nav a {
@@ -126,6 +125,44 @@ header {
 
 .subtabs .subtabs-content a {
     font-size: 10px;
+}
+
+.smallnav {
+    display: none;
+}
+
+@media screen and (width < 760px){
+    .nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: fit-content;
+        height: 100%;
+        justify-content: start;
+        left: -100%;
+        transition: left 100ms;
+    }
+    .nav.show {
+        left: 0;
+    }
+
+    .smallnav {
+        display: flex;
+        background-color: white;
+        justify-content: end;
+    }
+
+    .subtabs .subtabs-content {
+        position:relative;
+        display: flex;
+        height: 0;
+        overflow-y: hidden;
+        transition: height 150ms;
+    }
+
+    .subtabs:hover .subtabs-content {
+        height: 100px;
+    }
 }
 
 /* footer */
