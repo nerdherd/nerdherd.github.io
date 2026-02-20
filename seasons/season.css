@@ -14,3 +14,9 @@
 .robotinfo *:nth-child(2) {
     width: 30%;
 }
+
+iframe {
+    max-width: calc(100vw - 100px);
+    height: auto;
+    aspect-ratio: 560/315;
+}
