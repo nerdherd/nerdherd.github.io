@@ -1,0 +1,16 @@
+.robotinfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* Uncomment following to style robot image */
+/* .robotinfo *:first-child{
+
+} */
+
+.robotinfo *:nth-child(2) {
+    width: 30%;
+}

@@ -9,7 +9,6 @@ html, body {
 
 .main-content {
     width: min(var(--min-width),calc(100% - 40px));
-    min-height: 100%;
 }
 
 /* body */
