@@ -139,3 +139,48 @@ td{
 .look{
     color:red;
 }
+
+.award-panel button{
+    color: white;
+    background-color: var(--nerd-herd-navy);
+    border: none;
+    height: 50px;
+    font-size: xx-large;
+    flex-grow: 1;
+}
+
+.award-panel button:hover{
+    background-color: var(--nerd-herd-blue);
+}
+
+.award-panel button:active{
+    background-color: var(--nerd-herd-light-blue)
+}
+
+.award-panel h1{
+    flex-grow: 3;
+    text-align: center;
+}
+
+.award-panel div{
+    display: flex;
+    border: 1px solid black;
+    background-color: var(--nerd-herd-navy);
+}
+
+.award-panel{
+    color: white;
+    width: 33%;
+}
+
+.award-subpanel{
+    width: 100%;
+}
+
+#award-list-1{
+    display: flex;
+}
+
+#award-list-2{
+    display: none;
+}
