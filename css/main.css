@@ -177,10 +177,10 @@ td{
     width: 100%;
 }
 
-#award-list-1{
-    display: flex;
+.award-list{
+    display: none;
 }
 
-#award-list-2{
-    display: none;
+.active{
+    display: flex !important;
 }
