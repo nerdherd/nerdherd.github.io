@@ -184,3 +184,16 @@ td{
 .active{
     display: flex !important;
 }
+
+.top-btn{
+    width: 49%;
+    background-color: var(--nerd-herd-navy);
+    color: white;
+    border: none;
+    height: 30px;
+}
+
+.top-btns{
+    justify-content: space-evenly;
+}
+
