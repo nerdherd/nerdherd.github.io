@@ -18,6 +18,7 @@ html, body {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .body p {
@@ -198,3 +199,22 @@ td{
     justify-content: space-evenly;
 }
 
+.rowButCol{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media screen and (width < 1124px){
+    .rowButCol{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.awards{
+    table-layout: fixed;
+}
