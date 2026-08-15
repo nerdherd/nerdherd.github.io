@@ -20,3 +20,23 @@ iframe {
     height: auto;
     aspect-ratio: 560/315;
 }
+
+.centered-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#first-yt{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number{
+    font-size: 100px;
+}
+
+#countdown-timer{
+    table-layout: fixed;
+}
