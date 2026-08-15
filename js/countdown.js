@@ -1,5 +1,4 @@
-// var biocoreReleaseDate = new Date("2027-01-09T17:00:00Z");
-var biocoreReleaseDate = new Date("2026-08-15T20:45:30Z");
+var biocoreReleaseDate = new Date("2027-01-09T17:00:00Z");
 
 var countdown = setInterval(function() {
 
