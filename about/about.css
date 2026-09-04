@@ -40,6 +40,7 @@
 
 .person p{
     text-align: center;
+    font-size: larger;
 }
 
 @media screen and (width < 1124px){
