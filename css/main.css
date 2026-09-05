@@ -239,3 +239,8 @@ td{
     width: 200px;
     border-radius: 10px;
 }
+
+.ftc-imgs *{
+    height: 400px;
+    margin: 10px
+}
