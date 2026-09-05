@@ -197,6 +197,7 @@ td{
 
 .top-btns{
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .rowButCol{
@@ -243,4 +244,24 @@ td{
 .ftc-imgs *{
     height: 400px;
     margin: 10px
+}
+
+@media screen and (width < 1124px){
+    .ftc-imgs *{
+        height: 200px;
+    }
+}
+
+#ftc-switch{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(183, 183, 183);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+#ftc-switch img{    
+    height: 100%;
 }
