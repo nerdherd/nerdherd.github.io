@@ -40,3 +40,62 @@ iframe {
 #countdown-timer{
     table-layout: fixed;
 }
+
+.season-selector{
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-selector button{
+    height: 100%;
+    aspect-ratio: 1/1;
+    margin: 0;
+    background-color: var(--nerd-herd-navy);
+    border: 5px solid var(--nerd-herd-light-blue);
+    color: var(--nerd-herd-light-blue);
+    font-size: xx-large;
+}
+
+.season-selector button:hover{
+    background-color: var(--nerd-herd-blue)
+}
+.season-selector button:active{
+    background-color: var(--nerd-herd-navy)
+}
+
+.season-selector div{
+    color:var(--nerd-herd-light-blue);
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-list{
+    transform: rotateX(180deg);
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scrollbar-color: var(--nerd-herd-blue) var(--nerd-herd-navy);
+}
+
+.season-list button{
+    transform: rotateX(180deg);
+    color: var(--nerd-herd-light-blue);
+    background-color: var(--nerd-herd-navy);
+    border: 0;
+    font-size: large;
+    margin: 3px;
+}
+
+.selected{
+    background: var(--nerd-herd-blue) !important;
+    border-radius: 10% !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid var(--nerd-herd-light-blue) !important;
+}
