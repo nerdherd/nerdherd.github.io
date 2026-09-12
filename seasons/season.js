@@ -28,6 +28,8 @@ const seasons = [
     "2027: BIOCORE\u2122"
 ]
 
+document.getElementById("btn-2027").scrollIntoView({ block: "center" });
+
 function seasonSet(year){
     for(let i=0; i<seasons.length; i++){
         let tempYear = i + 2001;
@@ -46,4 +48,11 @@ const title = document.getElementById("season-name");
 
 function update(){
     title.innerHTML = seasons.at(season);
+    for(let i=0; i<seasons.length; i++){
+        let tempYear = i + 2001;
+        let id = `${tempYear}-sec`;
+        console.log(id);
+        document.getElementById(id).classList.remove("infocus");
+    }
+    document.getElementById(`${season+2001}-sec`).classList.add("infocus");
 }
