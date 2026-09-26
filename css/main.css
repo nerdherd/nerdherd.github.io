@@ -65,6 +65,7 @@ html, body {
 
     .parag2{
         flex-direction: row-reverse;
+        align-items: center;
     }
 
     .parag1 .img-wrapper{
@@ -82,7 +83,7 @@ html, body {
 
     .body p {
         font-size: x-large;        
-        text-align: justify;
+        text-align: left;
     }
 
     .body{

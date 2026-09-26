@@ -108,3 +108,30 @@ iframe {
 .body > div{
     display: none;
 }
+
+.tba-btn{
+    width: 10%;
+    aspect-ratio: 1;
+    background-color: #3F51B5;
+    border: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tba-btn:hover{
+    background-color: #4b58a0;
+}
+
+.tba-btn:active{
+    background-color: #3F51B5;
+}
+
+.tba-btn img{
+    width: 50%;
+}
+
+.no-content{
+    text-align: center !important;
+}
