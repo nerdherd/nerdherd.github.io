@@ -267,3 +267,60 @@ td{
 #ftc-switch img{    
     height: 100%;
 }
+
+.sponsorshipClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.sponsorshipItem{
+    align-items: baseline;
+    height: 20vh;
+    border: 2px var(--nerd-herd-blue) solid;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+.sponsorshipItem h3{
+    margin: 0px;
+    text-align: center;
+}
+
+.sponsorImg{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.smaller{
+    font-size: smaller;
+}
+
+.sponsorTall{
+    height: 90%;
+}
+
+.sponsorWide{
+    width: 80%;
+}
+
+.sponsorImgTall{
+    height: 60%;
+}
+
+#sponsorshipItems{
+    display: flex;
+    --gap: 20px;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: flex-start;
+}
+
