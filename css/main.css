@@ -324,3 +324,9 @@ td{
     align-items: flex-start;
 }
 
+a {
+  color: inherit; /* or your preferred color code */
+  text-decoration: none;
+}
+
+
